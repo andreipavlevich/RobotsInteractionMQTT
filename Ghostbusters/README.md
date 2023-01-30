@@ -21,3 +21,6 @@ Files:
 2. Kittenbot FutureBoard_GB.py -> main script for Kittenbot FutureBoard to start an alarm (show Ghostbusters logo, blink LEDs and play Ghostbusters theme) or to stop an alarm (black LCD, LEDs off, buzzer off) if call-to-action data received from MQTT.
 3. Makeblock mBot2_GB.py -> main script for Makeblock mBot2 to move with alarm leds to capture a ghost when call-to-action from MQTT is received and move back with lights off when the ghostbusters take situation under control (another call-to-action from MQTT).
 4. microbit.py -> code that can be used in block editor like makecode.microbit.org in Python mode. To use that code to connect to MQTT broker and listen to topic, to rotate wheels and flash the headlights - tiny:bit and esp8266 extensions should be used. The code operates esp8266 (wifi connection -> mqtt connection -> mqtt topic listener) by micro:bit UART at P01 and P02 using AT commands.
+
+===============
+MQTT AT commands are supported in esp8266 running FW v2.2. Please update firmware using uploaded ESp8266-1MB-tx1rx3-AT_v2.2.zip file if necessary!
